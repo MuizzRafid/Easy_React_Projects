@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Users } from "./components/Users.jsx";
-import "./App.css";
 import { NewUser } from "./components/NewUser.jsx";
 import { UserContext } from "./context/UserContext.jsx";
 
@@ -19,8 +18,12 @@ function App() {
   return (
     <>
       <UserContext.Provider value={{ users, setUser }}>
-        <NewUser />
-        <Users />
+        <main className="min-h-screen bg-slate-100 px-4 py-6 sm:px-6 lg:px-8">
+          <section className="mx-auto flex w-full max-w-5xl flex-col gap-6 sm:gap-8">
+            <NewUser />
+            <Users />
+          </section>
+        </main>
       </UserContext.Provider>
     </>
   );
