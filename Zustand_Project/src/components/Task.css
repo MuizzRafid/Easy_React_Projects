@@ -6,7 +6,9 @@
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  align-items: space-between;
+  justify-content: space-around;
+  margin-bottom: 4px;
+  cursor: move;
 }
 
 .status {
@@ -26,4 +28,9 @@
 
 .DONE {
   background: var(--COLOR-DONE);
+}
+
+.dltButton {
+  border: none;
+  cursor: pointer;
 }
