@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useSearchParams } from "react-router-dom";
 import { addToPastes, updateToPastes } from "../redux/pasteSlice";
+
 import toast from "react-hot-toast";
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
     } else {
       //create
       dispatch(addToPastes(paste));
+
       toast.success("paste created");
     }
 

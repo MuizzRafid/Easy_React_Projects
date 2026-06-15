@@ -74,7 +74,10 @@ const Paste = () => {
                       </button>
                       <button className="rounded bg-blue-600 px-3 py-2 text-sm font-medium text-white transition hover:bg-[#4647AE]">
                         {/* <a href={`/pastes/${paste?._id}`}>View</a> */}
+
                         <NavLink to={`/paste/${paste?._id}`}> View</NavLink>
+
+                        <NavLink to={`/pastes/${paste?._id}`}> View</NavLink>
                       </button>
                       <button
                         className="rounded bg-blue-600 px-3 py-2 text-sm font-medium text-white transition hover:bg-[#4382DF]"
