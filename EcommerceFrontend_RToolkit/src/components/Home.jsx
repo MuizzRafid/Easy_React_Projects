@@ -50,7 +50,9 @@ export const Home = () => {
       </div>
 
       <div className="flex flex-wrap gap-4 justify-center p-4">
-        {filterProducts.length > 0 &&
+        {filterProducts.length === 0 ? (
+          <p>No product found</p>
+        ) : (
           filterProducts?.map((product, index) => {
             return (
               <div
@@ -80,7 +82,8 @@ export const Home = () => {
                 </div>
               </div>
             );
-          })}
+          })
+        )}
       </div>
     </div>
   );
