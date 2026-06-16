@@ -1,0 +1,9 @@
+@reference "../index.css";
+
+.nav-link {
+  @apply text-sm p-2 font-medium leading-none text-white no-underline hover:text-orange-200;
+}
+
+.nav-link-active-home {
+  @apply border-2 border-orange-200 p-2 bg-orange-400 rounded-md hover:text-orange-700;
+}
